@@ -1,0 +1,382 @@
+@font-face{
+    font-family: random_font;
+    src: url(YesevaOne-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: random_font;
+    color:white;
+}
+
+
+a{
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+a:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.5);
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.content{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.header{
+}
+
+.header-logo img{
+    float: left;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.header .header-buttons ul{
+    list-style-type: none;
+    display: flex;
+    float: right;
+    margin-right: 70px;
+    padding: 0;
+}
+
+.header .header-buttons li{
+    padding: 25px 20px 10px 20px;
+}
+
+.promo {
+    background-image: url(images/bg1.png);
+}
+
+.promo-content{
+    font-size: 40px;
+    padding: 200px 200px 100px 200px;
+    text-align: center;
+}
+
+.promo-content img{
+}
+
+.promo-content a{
+    margin: 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-color:  rgba(0,0,0,0.6);
+    border-style: solid;
+    border-width: 1px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#right-button{
+    background-color: rgba(255,255,255,0.15);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255,255,255,0.5);
+}
+
+
+
+.about{
+    background-image: url(images/pattern.png);
+}
+
+.about-content {
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+}
+
+.about-content * {
+    color: rgb(228,202,122);
+}
+
+.about-left {
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.about-left p{
+    color: black;
+}
+
+.about-left h3{
+    font-size: 36px;
+}
+
+#about-decoration{
+    color: rgb(228,202,122);
+    margin: 20px 0 20px 0;
+}
+
+#cook {
+    margin-left: 20%;
+    margin-right: 0%;
+    margin-top: 10%;
+}
+
+
+.ingredients{
+    background-image: url(images/bg2.png);
+}
+
+.ingredients-content{
+}
+
+.ingredients-right{
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    width: 40%;
+    padding: 50px;
+    margin-left: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ingredients-right h3{
+    font-size: 30px;
+}
+
+.ingredients-right img{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.menu-content *{
+    color: black;
+}
+
+menu-content hr{
+    color: rgb(228,202,122);
+}
+
+.menu-content h3{
+    color: rgb(228,202,122);
+}
+
+
+
+.menu{
+    background-image: url(images/pattern_2.png);
+}
+
+.menu-content{
+    text-align: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; 
+    display: grid;
+    gap: 0 100px;
+    justify-content: center;
+    padding: 50px;
+
+}
+.menu-content div{
+}
+
+.food-item {
+    padding: 0 50px 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 100% 4fr;
+    grid-template-rows: 0fr 0fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Item-Name Item-Name Item-Name Price"
+      "Horizontal-Line Horizontal-Line Horizontal-Line Horizontal-Line"
+      "Item-Description Item-Description Item-Description Item-Description";
+  }
+  
+.Item-Name { grid-area: Item-Name; 
+    color: rgb(228,202,122);
+}
+
+.menu-content h3 {
+    margin-top: 50px;
+}
+
+.Price { grid-area: Price; 
+    color: rgb(228,202,122);
+}
+
+.Horizontal-Line { grid-area: Horizontal-Line; 
+    height: 2px;
+    padding: 0;
+    margin: 0;
+}
+  
+  .Item-Description { grid-area: Item-Description; }
+  
+
+
+.appetisers {
+}
+
+
+.food-item *{
+    text-align: left;
+    margin: 2px;
+}
+
+.food-item h4{
+    color: rgb(228,202,122);
+}
+
+.food-item p{
+    font-size: 16px;
+}
+
+
+.menu-content h4 {
+    font-size: 20px;
+}
+
+.headline{
+    display: flex;
+}
+
+.menu-content h3 {
+    font-size: 30px;
+}
+
+.reviews{
+    background-image: url(images/bg3.png);
+
+}
+
+.reviews-content{
+}
+
+.review-box{
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    width: 60%;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.review-box h3{
+    font-size: 36px;
+}
+
+.review-box p{
+    font-size: 22px;
+    line-height: 40px;
+}
+
+#sign{
+    font-size: 14px;
+}
+
+.reservation{
+    background-image: url(images/pattern_3.png);
+
+}
+
+.reservation-content{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.reservation-content div{
+}
+
+.reservation-left{
+    text-align: center;
+    padding: 50px 0 50px 0;
+    display: flex;
+}
+
+.reservation-left div{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30%;
+}
+
+.reservation-text{
+    width: 200px;
+    text-align: center;
+}
+
+
+.reservation-left p{
+    color: black;
+}
+
+.reservation-text label{
+    color: rgb(228,202,122);
+}
+
+.reservation-text input[type=submit]{
+    background-color: rgb(228,202,122);
+    border: none;
+    color: white;
+}
+
+.reservation-left h3{
+    font-size: 36px;
+    color: rgb(228,202,122);
+}
+
+label {
+    text-align: left;
+    width: auto;
+}
+
+.buttons {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; 
+    column-gap: 10px;
+    row-gap: 15px;
+    display: grid;
+  }
+
+input{
+    width: 120px;
+  padding: 6px 6px;
+  margin: 8px 0;
+  color: black;
+}
+
+.footer{
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10%;
+    margin-top: -3%;
+    text-align: center;
+}
+
+
+.footer-content{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-content div{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 40%;
+}
